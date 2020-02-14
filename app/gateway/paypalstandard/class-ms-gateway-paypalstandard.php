@@ -571,7 +571,7 @@ class MS_Gateway_Paypalstandard extends MS_Gateway {
 				$domain . '/cgi-bin/webscr',
 				array(
 					'timeout' 		=> 60,
-					'sslverify' 	=> false,
+					'sslverify' 	=> true,
 					'httpversion' 	=> '1.1',
 					'body' 			=> $ipn_data,
 				)
